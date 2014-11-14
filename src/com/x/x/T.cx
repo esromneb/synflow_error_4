@@ -1,0 +1,12 @@
+package com.x.x;
+
+task T {
+	const uint width = 64;
+	typedef int<width> signed_t;
+	
+	out sync signed_t sout;
+
+	void loop() {
+		sout.write( 10 );
+	}
+}

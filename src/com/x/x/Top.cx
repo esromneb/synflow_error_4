@@ -1,0 +1,12 @@
+package com.x.x;
+
+network Top {
+	import com.x.x.T;
+	
+	const uint width = 7;
+
+	// breaks in 0.15.0 with:
+	//   no viable alternative at input 'width'
+	
+	inst = new com.x.x.T({width:width});
+}
